@@ -1,0 +1,11 @@
+create database Mohamed_Riyas;
+use Mohamed_Riyas;
+create table Login(Username varchar(20),Pasword varchar(20)); 
+create table Product(productId varchar(10),productName varchar(20),minSellQuantity int,price int,quantity int);
+desc Login;
+desc Product;
+alter table Product modify column productId int;
+alter table Login rename column Pasword to Password;
+insert into Login values('Mohammed Riyas','Lovelyriyas');
+insert into Login values('Kowsalya','kavidhaya');
+select * from Product;
